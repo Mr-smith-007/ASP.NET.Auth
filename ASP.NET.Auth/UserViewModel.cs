@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Net.Mail;
 
 namespace ASP.NET.Auth
-{
+{    
     public class UserViewModel
     {
         public Guid Id { get; set; }
