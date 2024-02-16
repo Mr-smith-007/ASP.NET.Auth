@@ -70,11 +70,14 @@ namespace ASP.NET.Auth
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ASP.NET.Auth v1"));
             }
 
+            app.UseLogMiddleware();
+
             app.UseRouting();
 
             app.UseAuthentication();
 
             app.UseAuthorization();
+            app.UseLogMiddleware();
 
             app.UseEndpoints(endpoints =>
             {

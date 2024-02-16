@@ -20,7 +20,7 @@ namespace ASP.NET.Auth
                 Login = "ivanov",
                 Role = new Role()
                 {
-                    Id = 1,
+                    Id = 2,
                     Name = "Администратор"
                 }
             });
@@ -35,7 +35,7 @@ namespace ASP.NET.Auth
                 Login = "petrov",
                 Role = new Role()
                 {
-                    Id = 2,
+                    Id = 1,
                     Name = "Пользователь"
                 }
             });
@@ -50,7 +50,7 @@ namespace ASP.NET.Auth
                 Login = "sidorov",
                 Role = new Role()
                 {
-                    Id = 3,
+                    Id = 1,
                     Name = "Пользователь"
                 }
             });
