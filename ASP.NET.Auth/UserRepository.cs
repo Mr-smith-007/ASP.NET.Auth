@@ -17,7 +17,12 @@ namespace ASP.NET.Auth
                 LastName = "Иванов",
                 Email = "example1@gmail.com",
                 Password = "111111",
-                Login = "ivanov"
+                Login = "ivanov",
+                Role = new Role()
+                {
+                    Id = 1,
+                    Name = "Администратор"
+                }
             });
 
             _users.Add(new User()
@@ -27,7 +32,12 @@ namespace ASP.NET.Auth
                 LastName = "Петров",
                 Email = "example2@mail.ru",
                 Password = "222222",
-                Login = "petrov"
+                Login = "petrov",
+                Role = new Role()
+                {
+                    Id = 2,
+                    Name = "Пользователь"
+                }
             });
 
             _users.Add(new User()
@@ -37,7 +47,12 @@ namespace ASP.NET.Auth
                 LastName = "Сидоров",
                 Email = "example3@yandex.ru",
                 Password = "333333",
-                Login = "sidorov"
+                Login = "sidorov",
+                Role = new Role()
+                {
+                    Id = 3,
+                    Name = "Пользователь"
+                }
             });
         }
 
