@@ -2,7 +2,7 @@
 using System.IO;
 using System.Threading;
 
-namespace ASP.NET.Auth
+namespace ASP.NET.Auth.PLL.Logs
 {
     public class Logger : ILogger
     {

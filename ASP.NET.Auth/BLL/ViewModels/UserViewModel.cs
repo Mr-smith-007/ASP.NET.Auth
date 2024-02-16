@@ -1,9 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ASP.NET.Auth.BLL.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Net.Mail;
 
-namespace ASP.NET.Auth
-{    
+namespace ASP.NET.Auth.BLL.ViewModels
+{
     public class UserViewModel
     {
         public Guid Id { get; set; }
@@ -20,7 +21,7 @@ namespace ASP.NET.Auth
 
         public string GetFullName(string firstName, string lastName)
         {
-            return String.Concat(firstName, " ", lastName);
+            return string.Concat(firstName, " ", lastName);
         }
 
         public bool GetFromRussiaValue(string email)

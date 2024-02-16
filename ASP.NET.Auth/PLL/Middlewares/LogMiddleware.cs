@@ -1,14 +1,15 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using ASP.NET.Auth.PLL.Logs;
+using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
 
-namespace ASP.NET.Auth
+namespace ASP.NET.Auth.PLL.Middlewares
 {
     public class LogMiddleware
     {
         private readonly ILogger _logger;
         private readonly RequestDelegate _next;
 
-        public LogMiddleware(RequestDelegate next,ILogger logger)
+        public LogMiddleware(RequestDelegate next, ILogger logger)
         {
             _next = next;
             _logger = logger;

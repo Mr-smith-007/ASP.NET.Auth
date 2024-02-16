@@ -1,4 +1,4 @@
-﻿namespace ASP.NET.Auth
+﻿namespace ASP.NET.Auth.BLL.Models
 {
     public class Role
     {

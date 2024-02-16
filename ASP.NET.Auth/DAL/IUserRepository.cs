@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using ASP.NET.Auth.BLL.Models;
 
-namespace ASP.NET.Auth
+namespace ASP.NET.Auth.DAL
 {
     public interface IUserRepository
     {

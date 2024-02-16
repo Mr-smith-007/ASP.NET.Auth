@@ -1,3 +1,6 @@
+using ASP.NET.Auth.DAL;
+using ASP.NET.Auth.PLL.Logs;
+using ASP.NET.Auth.PLL.Middlewares;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;

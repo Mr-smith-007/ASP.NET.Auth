@@ -1,4 +1,8 @@
-﻿using AutoMapper;
+﻿using ASP.NET.Auth.BLL.Models;
+using ASP.NET.Auth.BLL.ViewModels;
+using ASP.NET.Auth.DAL;
+using ASP.NET.Auth.PLL.Logs;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
@@ -10,7 +14,7 @@ using System.Security.Authentication;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace ASP.NET.Auth.Controllers
+namespace ASP.NET.Auth.PLL.Controllers
 {
     [ExceptionHandler]
     [ApiController]
@@ -20,7 +24,7 @@ namespace ASP.NET.Auth.Controllers
         private IMapper _mapper;
         private ILogger _logger;
         private IUserRepository _userRepository;
-        public UserController(ILogger logger, IMapper mapper, IUserRepository userRepository) 
+        public UserController(ILogger logger, IMapper mapper, IUserRepository userRepository)
         {
             _logger = logger;
             _mapper = mapper;
@@ -60,7 +64,7 @@ namespace ASP.NET.Auth.Controllers
             };
 
             var userViewModel = _mapper.Map<UserViewModel>(user);
-                        
+
             return userViewModel;
         }
 
@@ -87,7 +91,7 @@ namespace ASP.NET.Auth.Controllers
 
             ClaimsIdentity claimsIdentity = new ClaimsIdentity(
                 claims,
-                "AppCookie", 
+                "AppCookie",
                 ClaimsIdentity.DefaultNameClaimType,
                 ClaimsIdentity.DefaultRoleClaimType);
 

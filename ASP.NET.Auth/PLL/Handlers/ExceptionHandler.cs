@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ASP.NET.Auth.PLL.Exceptions;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace ASP.NET.Auth
+namespace ASP.NET.Auth.PLL.Handlers
 {
     public class ExceptionHandler : ActionFilterAttribute, IExceptionFilter
     {

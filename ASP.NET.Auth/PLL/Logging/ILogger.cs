@@ -1,4 +1,4 @@
-﻿namespace ASP.NET.Auth
+﻿namespace ASP.NET.Auth.PLL.Logs
 {
     public interface ILogger
     {
